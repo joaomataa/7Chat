@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
 $db = "7chat";
-$user = "miguel";
-$pass = "edfrt456";
+$user = "___";
+$pass = "___";
 
 $conn = new mysqli($host, $user, $pass, $db);
 
