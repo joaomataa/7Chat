@@ -148,9 +148,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const messages = await response.json();
       const newMessageCount = messages.length
 
-      if (newMessageCount > previousMessageCount) {
+      if (newMessageCount != previousMessageCount) {
         previousMessageCount = newMessageCount
         displayMessages(messages, true);
+        messageList.scrollTop = messageList.scrollHeight;
       } else {
         displayMessages(messages, false);
       }
