@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>7Chat</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+        <h1>7Chat</h1>
+		<div id="loginContainer" class="form-container">
+			<p class="title">Welcome!</p>
+			<form class="form" id="loginForm" method="POST">
+				<div class="input-container">
+					<input id="username" required placeholder="Username" class="input" type="text"/>
+					<div class="input-underline"></div>
+					<div class="input-highlight"></div>
+					<div class="input-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-user-round"><path d="M18 20a6 6 0 0 0-12 0"/><circle cx="12" cy="10" r="4"/><circle cx="12" cy="12" r="10"/></svg>
+					</div>
+				</div>
+				<div class="input-container">
+					<input id="password" required placeholder="Password" class="input" type="password"/>
+					<div class="input-underline"></div>
+					<div class="input-highlight"></div>
+					<div class="input-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-key-round"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/><circle cx="16.5" cy="7.5" r=".5" fill="currentColor" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""/></svg>
+					</div>
+				</div>
+				<button id="loginBtn" type="submit">Login</button>
+			</form>
+			<p class="signup">Don't have an account?
+				<a rel="noopener noreferrer" href="#" id="showRegisterForm">Sign up</a>
+			</p>
+		</div>
+
+
+		<div id="registerContainer" class="form-container hidden">
+            <p class="title">Register</p>
+            <form class="form" id="registerForm" method="POST">
+                <div class="input-container">
+                    <input id="regUsername" required placeholder="Username" class="input" type="text" />
+                    <div class="input-underline"></div>
+                    <div class="input-highlight"></div>
+                    <div class="input-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-user-round"><path d="M18 20a6 6 0 0 0-12 0"/><circle cx="12" cy="10" r="4"/><circle cx="12" cy="12" r="10"/></svg>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <input id="regPassword" required placeholder="Password" class="input" type="password" />
+                    <div class="input-underline"></div>
+                    <div class="input-highlight"></div>
+                    <div class="input-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-key-round"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/><circle cx="16.5" cy="7.5" r=".5" fill="currentColor" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""/></svg>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <input id="regPasswordConfirm" required placeholder="Confirm Password" class="input" type="password" />
+                    <div class="input-underline"></div>
+                    <div class="input-highlight"></div>
+                    <div class="input-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-key-round"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/><circle cx="16.5" cy="7.5" r=".5" fill="currentColor" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""/></svg>
+                    </div>
+                </div>
+                <button id="registerBtn" type="submit">Sign Up</button>
+            </form>
+            <p class="signup">Already have an account?
+                <a rel="noopener noreferrer" href="#" id="showLoginForm">Login</a>
+            </p>
+        </div>
+
+		<script src="js/app.js"></script>
+	</body>
+</html>

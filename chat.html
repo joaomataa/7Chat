@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<title>7Chat</title>
+	</head>
+	<body>
+		<div id="topBar">
+			<h2>7Chat</h2>
+			<div style="display: flex; align-items: center;">
+				<svg style="margin: 10px;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-user-round"><path d="M18 20a6 6 0 0 0-12 0"/><circle cx="12" cy="10" r="4"/><circle cx="12" cy="12" r="10"/></svg>
+				<h4 id="h4_username"></h4>
+			</div>
+		</div>
+		<div id="main">
+			<div id="sideBar">
+				<h3>Direct messages</h3>
+				<div class="input-container">
+					<input id="searchChat" required="" placeholder="Procurar" class="input" type="text"/>
+					<div class="input-underline"></div>
+					<div class="input-highlight"></div>
+					<div class="input-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"></path></svg>
+					</div>
+				</div>
+				<div id="chatList"></div>
+			</div>
+			<div class="chat-area">
+				<div id="messageList"></div>
+				<form id="messageForm" class="hidden">
+					<svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+					<input type="text" id="messageInput" required>
+					<button type="submit" id="sendMessageBtn">Send</button>
+				</form>
+			</div>
+		</div>
+		<script src="js/chat.js" defer></script>
+	</body>
+</html>
