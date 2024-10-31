@@ -3,7 +3,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
-  fetch("http://127.0.0.1:8080/7Chat/php/login.php", {
+  fetch("php/login.php", {
     method: "POST",
     body: new URLSearchParams(`username=${username}&password=${password}`),
   })
@@ -32,7 +32,7 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
     return;
   }
 
-  fetch("http://127.0.0.1:8080/7Chat/php/register.php", {
+  fetch("php/register.php", {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",

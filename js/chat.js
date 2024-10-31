@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   async function fetchChatList() {
     try {
       const response = await fetch(
-        `http://127.0.0.1:8080/7Chat/php/get_chat_list.php?user_id=${loggedInUserId}`
+        `php/get_chat_list.php?user_id=${loggedInUserId}`
       );
       if (!response.ok) throw new Error("Failed to fetch chat list")
 
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8080/7Chat/php/send_msg.php",
+        "php/send_msg.php",
         {
           method: "POST",
           headers: {
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8080/7Chat/php/get_msg.php?sender_id=${loggedInUserId}&receiver_id=${receiverId}`
+        `php/get_msg.php?sender_id=${loggedInUserId}&receiver_id=${receiverId}`
       );
 
       if (!response.ok) throw new Error("Failed to load messages");
