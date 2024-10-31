@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
           if (previousSelected && previousSelected !== chatItem) {
             previousSelected.classList.remove("selected");
           }
-
+          
           chatItem.classList.add("selected");
         });
 
@@ -173,12 +173,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const timestampSpan = document.createElement("span")
         timestampSpan.classList.add("message-timestamp");
-        timestampSpan.textContent = msg.timestamp
-          ? formatTime(msg.timestamp)
-          : "Unknown time";
+        timestampSpan.textContent = msg.timestamp ? formatTime(msg.timestamp) : "Unknown time";
 
-        const alignmentClass =
-          msg.sender_id == loggedInUserId ? "message-right" : "message-left";
+        const alignmentClass = msg.sender_id == loggedInUserId ? "message-right" : "message-left";
         messageDiv.classList.add(alignmentClass);
 
         messageDiv.textContent = msg.message
