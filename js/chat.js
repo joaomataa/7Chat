@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
         chatList.appendChild(chatItem);
       });
     } else {
-      chatList.innerHTML = "<div>No chats available.</div>";
+      chatList.innerHTML = "<div>No users available.</div>"
     }
   }
 
